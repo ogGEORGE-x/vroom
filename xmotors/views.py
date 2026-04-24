@@ -15,3 +15,13 @@ def blog(request):
     return render(request, 'blog.html')
 def blogdetails(request):
     return render(request, 'blog-details.html')
+def add_car(request):
+    if request.method == 'POST':
+        # Here you would typically handle the form submission, e.g., save the car details to the database
+        make = request.POST.get('make')
+        model = request.POST.get('model')
+        year = request.POST.get('year')
+        price = request.POST.get('price')
+        # You can add code here to save the car details to your database
+        # For now, we will just render the same page after submission
+    return render(request, 'add_car.html')

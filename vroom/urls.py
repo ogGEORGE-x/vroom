@@ -26,4 +26,5 @@ urlpatterns = [
     path('car-details/', include('xmotors.urls')),
     path('blog/', include('xmotors.urls')),
     path('blog-details/', include('xmotors.urls')),
+    path('add_car/', include('xmotors.urls'))
 ]
