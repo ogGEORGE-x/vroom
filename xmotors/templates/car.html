@@ -93,14 +93,14 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="header__logo">
-                        <a href=""><img src="{% static 'img/redximg-removebg-preview.png'%}" width="50" alt=""></a>
+                        <a href="/"><img src="{% static 'img/redximg-removebg-preview.png'%}" width="50" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
                     <div class="header__nav">
                         <nav class="header__menu">
                             <ul>
-                                <li><a href="">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li class="active"><a href="car/">Cars</a></li>
                                 <li><a href="blog/">Blog</a></li>
                                 <li><a href="#">Pages</a>
@@ -170,7 +170,7 @@
                                     <option value="">Acura</option>
                                     <option value="">Audi</option>
                                     <option value="">Bentley</option>
-                                    <<option value="">BMW</option>
+                                    <option value="">BMW</option>
                                     <option value="">Bugatti</option>
                                 </select>
                                 <select>
@@ -191,8 +191,8 @@
                                 </select>
                                 <select>
                                     <option value="">Transmisson</option>
-                                    <option value="">Bluetooth</option>
-                                    <option value="">WiFi</option>
+                                    <option value="">Automatic</option>
+                                    <option value="">Manual</option>
                                 </select>
                                 <select>
                                     <option value="">Mileage</option>
@@ -227,7 +227,7 @@
                                     </div>
                                 </div>
                                 <div class="car__filter__btn">
-                                    <button type="submit" class="site-btn">Reset FIlter</button>
+                                    <button type="submit" class="site-btn">Reset Filter</button>
                                 </div>
                             </form>
                         </div>
@@ -261,21 +261,26 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-1.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-6.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-3.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/911gt3rs-1.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/911gt3rs-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/911gt3rs-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/911gt3rs-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
-                                        <div class="label-date">2016</div>
-                                        <h5><a href="#">Porsche cayenne turbo s</a></h5>
+                                        <div class="label-date">2019</div>
+                                        <h5><a href="#">Porsche 911 GT3 RS</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
-                                            <li>Auto</li>
+                                            <li>Manual</li>
                                             <li><span>700</span> hp</li>
                                         </ul>
                                     </div>
+                                    <div class="car__item__price">
+                                        <span class="car-option sale">For Sale</span>
+                                        <h6>$73,900</h6>
+                                    </div>
+                                    <br>
                                     <div class="car__item__price">
                                         <span class="car-option">For Rent</span>
                                         <h6>$218<span>/Month</span></h6>
@@ -286,15 +291,15 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-2.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-6.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-4.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/grgt-1.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/grgt-2.jpeg.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/grgt-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/grgt-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2020</div>
-                                        <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                        <h5><a href="#">Toyota GR GT</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
                                             <li>Auto</li>
@@ -305,27 +310,37 @@
                                         <span class="car-option sale">For Sale</span>
                                         <h6>$73,900</h6>
                                     </div>
+                                    <br>
+                                    <div class="car__item__price">
+                                        <span class="car-option">For Rent</span>
+                                        <h6>$218<span>/Month</span></h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-3.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-6.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-5.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/m3gtr-1 (1).jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/m3gtr-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/m3gtr-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/m3gtr-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2017</div>
-                                        <h5><a href="#">Bmw s1000rr 2019 m</a></h5>
+                                        <h5><a href="#">BMW M3 GTR</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
-                                            <li>Auto</li>
-                                            <li><span>700</span> hp</li>
+                                            <li>Manual</li>
+                                            <li><span>2000</span> hp</li>
                                         </ul>
+                                    </div> 
+                                    <div class="car__item__price">
+                                        <span class="car-option sale">For Sale</span>
+                                        <h6>$73,900</h6>
                                     </div>
+                                    <br>
                                     <div class="car__item__price">
                                         <span class="car-option">For Rent</span>
                                         <h6>$299<span>/Month</span></h6>
@@ -336,21 +351,26 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-5.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-7.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-2.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/a8.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/a8-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/a8-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/a8-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2018</div>
-                                        <h5><a href="#">Audi q8 2020</a></h5>
+                                        <h5><a href="#">Audi A8</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
                                             <li>Auto</li>
                                             <li><span>700</span> hp</li>
                                         </ul>
                                     </div>
+                                    <div class="car__item__price">
+                                        <span class="car-option sale">For Sale</span>
+                                        <h6>$73,900</h6>
+                                    </div>
+                                    <br>
                                     <div class="car__item__price">
                                         <span class="car-option">For Rent</span>
                                         <h6>$319<span>/Month</span></h6>
@@ -361,15 +381,15 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-6.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-3.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-1.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/shelby-1.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/shelby-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/shelby-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/shelby-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2016</div>
-                                        <h5><a href="#">Mustang shelby gt500</a></h5>
+                                        <h5><a href="#">Mustang Shelby GT500</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
                                             <li>Auto</li>
@@ -380,27 +400,37 @@
                                         <span class="car-option sale">For Sale</span>
                                         <h6>$730,900</h6>
                                     </div>
+                                    <br>
+                                    <div class="car__item__price">
+                                        <span class="car-option">For Rent</span>
+                                        <h6>$218<span>/Month</span></h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-4.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-2.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-1.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/huracan-1.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/huracan-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/huracan-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/huracan-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2019</div>
-                                        <h5><a href="#">Lamborghini huracan evo</a></h5>
+                                        <h5><a href="#">Lamborghini Huracan STO</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
                                             <li>Auto</li>
                                             <li><span>700</span> hp</li>
                                         </ul>
                                     </div>
+                                    <div class="car__item__price">
+                                        <span class="car-option sale">For Sale</span>
+                                        <h6>$73,900</h6>
+                                    </div>
+                                    <br>
                                     <div class="car__item__price">
                                         <span class="car-option">For Rent</span>
                                         <h6>$319<span>/Month</span></h6>
@@ -411,15 +441,15 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-7.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-2.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-4.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-1.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/amg-1.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/amg-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/amg-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/amg-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2020</div>
-                                        <h5><a href="#">Lamborghini huracan evo</a></h5>
+                                        <h5><a href="#">Mercedes-Benz AMG GT 63</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
                                             <li>Auto</li>
@@ -430,27 +460,37 @@
                                         <span class="car-option sale">For Sale</span>
                                         <h6>$120,000</h6>
                                     </div>
+                                    <br>
+                                    <div class="car__item__price">
+                                        <span class="car-option">For Rent</span>
+                                        <h6>$218<span>/Month</span></h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-3.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-5.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-2.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/ferrari-1.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/ferrari-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/ferrari-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/ferrari-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2017</div>
-                                        <h5><a href="#">Porsche cayenne turbo s</a></h5>
+                                        <h5><a href="#">Ferrari 812 Competizione A</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
                                             <li>Auto</li>
                                             <li><span>700</span> hp</li>
                                         </ul>
                                     </div>
+                                    <div class="car__item__price">
+                                        <span class="car-option sale">For Sale</span>
+                                        <h6>$73,900</h6>
+                                    </div>
+                                    <br>
                                     <div class="car__item__price">
                                         <span class="car-option">For Rent</span>
                                         <h6>$319<span>/Month</span></h6>
@@ -461,15 +501,15 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="car__item">
                                 <div class="car__item__pic__slider owl-carousel">
-                                    <img src="{% static 'img/cars/car-8.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-3.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-5.jpg'%}" alt="">
-                                    <img src="{% static 'img/cars/car-2.jpg'%}" alt="">
+                                    <img src="{% static 'img/cars/lancer-1.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/lancer-2.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/lancer-3.jpeg'%}" alt="">
+                                    <img src="{% static 'img/cars/lancer-4.jpeg'%}" alt="">
                                 </div>
                                 <div class="car__item__text">
                                     <div class="car__item__text__inner">
                                         <div class="label-date">2020</div>
-                                        <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                        <h5><a href="#">Mitsubishi Lancer Evolution X</a></h5>
                                         <ul>
                                             <li><span>35,000</span> mi</li>
                                             <li>Auto</li>
@@ -479,6 +519,11 @@
                                     <div class="car__item__price">
                                         <span class="car-option sale">For sale</span>
                                         <h6>$73,900</h6>
+                                    </div>
+                                    <br>
+                                    <div class="car__item__price">
+                                        <span class="car-option">For Rent</span>
+                                        <h6>$218<span>/Month</span></h6>
                                     </div>
                                 </div>
                             </div>
