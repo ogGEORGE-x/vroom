@@ -31,5 +31,5 @@ def add_car(request):
         # You can add code here to save the car details to your database
         # For now, we will just render the same page after submission
     return render(request, 'add_car.html')
-def bmw(request):
-    return render(request, 'bmw.html')
+# def bmw(request):
+#     return render(request, 'bmw.html')
