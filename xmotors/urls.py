@@ -13,5 +13,9 @@ urlpatterns = [
     path('blog/', views.blog, name='blog'),
     path('blog-details/', views.blogdetails, name='blog-details'),
     path('add_car/', views.add_car, name='add_car'),
+    path('blogs2/', views.blogs2, name='blogs2'),
+    path('blogs3/', views.blogs3, name='blogs3'),
+    path('blogsfl/', views.blogsfl, name='blogsfl'),
+    path('checkout/', views.checkout, name='checkout'),
     # path('bmw/', views.bmw, name='bmw'),
-]
+]  

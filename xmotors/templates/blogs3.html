@@ -1,0 +1,428 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <link rel="shortcut icon" href="{% static 'img/redximg-removebg-preview.png'%}" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="description" content="HVAC Template">
+    <meta name="keywords" content="HVAC, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>X Motors</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/elegant-icons.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__widget">
+            <a href="#"><i class="fa fa-cart-plus"></i></a>
+            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="add_car/" class="primary-btn">Add Car</a>
+        </div>
+        <div class="offcanvas__logo">
+            <a href=""><img src="{% static 'img/redximg-removebg-preview.png'%}" width="50" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget__add">
+            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+        </ul>
+        <div class="offcanvas__phone__num">
+            <i class="fa fa-phone"></i>
+            <span>(+12) 345 678 910</span>
+        </div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+                            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+12) 345 678 910</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="/"><img src="{% static 'img/redximg-removebg-preview.png'%}" width="50" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="car/">Cars</a></li>
+                                <li class="active"><a href="blog/">Blog</a></li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="about/">About Us</a></li>
+                                        <li><a href="car-details/">Car Details</a></li>
+                                        <li><a href="blog-details/">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about/">About</a></li>
+                                <li><a href="contact/">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            <div class="header__nav__widget__btn">
+                                <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                            </div>
+                            <a href="add_car/" class="primary-btn">Add Car</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb End -->
+    <div class="breadcrumb-option set-bg" data-setbg="{% static 'img/breadcrumb-bg.jpg'%}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Latest Blogs</h2>
+                        <div class="breadcrumb__links">
+                            <a href="/"><i class="fa fa-home"></i> Home</a>
+                            <span>Our Blogs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Begin -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic set-bg" data-setbg="{% static 'img/cars/porsche.jpeg'%}">
+                                    <ul>
+                                        <li>By Polly Williams</li>
+                                        <li>Dec 11, 2018</li>
+                                        <li>8 Comment</li>
+                                    </ul>
+                                </div>
+                                <div class="blog__item__text">
+                                    <h5><a href="https://www.porsche.com/stories/experience/porsche-independent-car-communities/">The rise of independent Porsche car communities</a></h5>
+                                    <p>All over the world, more and more Porsche fans are coming together in independent communities. A place to make new friends, have fun, drive cars and talk Porsche </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic set-bg" data-setbg="{% static 'img/cars/civic26.jpeg'%}">
+                                    <ul>
+                                        <li>By Evelyn Lane</li>
+                                        <li>Dec 17, 2018</li>
+                                        <li>Comment</li>
+                                    </ul>
+                                </div>
+                                <div class="blog__item__text">
+                                    <h5><a href="https://www.cars.com/articles/the-2026-honda-civic-type-r-is-the-best-driving-new-car-under-100000-review-523573/">The 2026 Honda Civic Type R Is the Best-Driving New Car Under $100,000: Review</a></h5>
+                                    <p>The Type R is far from the fastest car under $100K. It’s neither the best sounding nor the best looking, and some of its interior trim doesn’t quite match up to the nearly $50K you’ll pay for the privilege of ownership. 
+                                       Like all of history’s greatest cars, the Type R is more than the sum of its parts, presenting an unbelievable balance of tactility, feedback, confidence, performance, raw capability and fun that’s unlike anything else I’ve driven with a warranty.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic set-bg" data-setbg="{% static 'img/cars/miata.jpeg'%}">
+                                    <ul>
+                                        <li>By Jessie Palmer</li>
+                                        <li>Dec 19, 2018</li>
+                                        <li>Comment</li>
+                                    </ul>
+                                </div>
+                                <div class="blog__item__text">
+                                    <h5><a href="https://www.autoblog.com/convertibles/mazda-is-asking-enthusiasts-how-to-build-the-next-miata">Mazda Is Asking Enthusiasts How to Build the Next Miata</a></h5>
+                                    <p>Several reports about the development of the next-generation Mazda MX-5 Miata have already emerged, but concrete details remain scarce. More recently, Motor1 sat down with Mazda Italia to discuss its progress, and one interesting takeaway is that the automaker is welcoming opinions and ideas from Miata community groups and enthusiasts in Italy.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic set-bg" data-setbg="{% static 'img/cars/s2000.jpeg'%}">
+                                    <ul>
+                                        <li>By Don Townsend</li>
+                                        <li>Dec 22, 2018</li>
+                                        <li>Comment</li>
+                                    </ul>
+                                </div>
+                                <div class="blog__item__text">
+                                    <h5><a href="https://www.autoblog.com/news/honda-s2000-has-just-835-miles-and-its-almost-six-figures">Honda S2000 Has Just 835 Miles and It’s Almost Six Figures</a></h5>
+                                    <p>When it comes to roadsters, the Honda S2000 might be the ultimate analog expression of the concept. A sports car through and through, Honda’s drop-top was ahead of its time then, and it still continues to impress. 
+                                        It’s a shame that Honda never continued the line because it might have been able to compete and even beat the likes of the Mazda MX-5 and Toyota GR86/Subaru BRZ. While it is no Skyline GT-R, it’s a blast to drive, if you dare touch that odometer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic set-bg" data-setbg="{% static 'img/cars/q3.jpeg'%}">
+                                    <ul>
+                                        <li>By Isabella Mann</li>
+                                        <li>Dec 25, 2018</li>
+                                        <li>2 Comment</li>
+                                    </ul>
+                                </div>
+                                <div class="blog__item__text">
+                                    <h5><a href="https://www.autoblog.com/reviews/i-drove-the-all-new-2026-audi-q3-heres-my-honest-take-on-audis-best-entry-suv-yet">I Drove the All-New 2026 Audi Q3: Here’s My Honest Take on Audi’s Best Entry SUV Yet</a></h5>
+                                    <p>It’s a very powerful tool to increase the network and doesn’t even cost anything.
+                                        When receiving a casual call from family members and friends...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic set-bg" data-setbg="{% static 'img/cars/mansory-m5.jpeg'%}">
+                                    <ul>
+                                        <li>By Polly Williams</li>
+                                        <li>Dec 27, 2018</li>
+                                        <li>6 Comment</li>
+                                    </ul>
+                                </div>
+                                <div class="blog__item__text">
+                                    <h5><a href="https://www.autoblog.com/news/this-850-hp-mansory-bmw-m5-was-built-for-egypt">This 850-HP Mansory BMW M5 Was Built for Egypt</a></h5>
+                                    <p>Recently, it was spotted at the Beijing Auto Show, marking its entry into the Chinese market with a Mansory-dressed Zeekr 9X. Just a few weeks later, the brand is entering new territory in Africa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination__option">
+                        <a href="blog/">1</a>
+                        <a href="blogs2/">2</a>
+                        <a href="blogs3/" class="active">3</a>
+                        <a href="blogsfl/"><span class="arrow_carrot-2right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-9">
+                    <div class="blog__sidebar">
+                        <form action="#" class="blog__sidebar__search">
+                            <input type="text" placeholder="Search...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        <div class="blog__sidebar__feature">
+                            <h4>Feature News</h4>
+                            <div class="blog__sidebar__feature__item">
+                                <h6><a href="#">Where To Look For Cheap Brochure</a></h6>
+                                <ul>
+                                    <li>By Polly Williams</li>
+                                    <li>Dec 27, 2018</li>
+                                </ul>
+                            </div>
+                            <div class="blog__sidebar__feature__item">
+                                <h6><a href="#">Using Banner Stands To Increase</a></h6>
+                                <ul>
+                                    <li>By Evelyn Lane</li>
+                                    <li>Dec 17, 2018</li>
+                                </ul>
+                            </div>
+                            <div class="blog__sidebar__feature__item">
+                                <h6><a href="#">Promotional Advertising Specialty</a></h6>
+                                <ul>
+                                    <li>By Don Townsend</li>
+                                    <li>Dec 22, 2018</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__categories">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li><a href="#">Creativity</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Inspiration</a></li>
+                                <li><a href="#">News</a></li>
+                            </ul>
+                        </div>
+                        <div class="blog__sidebar__tag">
+                            <h4>Tag</h4>
+                            <a href="#">Car Dealer</a>
+                            <a href="#">bmw</a>
+                            <a href="#">Chevrolet</a>
+                            <a href="#">ferrari</a>
+                            <a href="#">Honda</a>
+                            <a href="#">Hatchback</a>
+                        </div>
+                        <div class="blog__sidebar__newslatter">
+                            <h4>Newsletter</h4>
+                            <p>Subscribe our newsletter gor get</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your email">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="{% static 'img/footer-bg.jpg'%}">
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Contact Us Now!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item"><i class="fa fa-phone"></i> (+12) 345 678 910</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i> Colorlib@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href=""><img src="{% static 'img/redximg-removebg-preview.png'%}" width="50" alt=""></a>
+                        </div>
+                        <p>Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us
+                            on (+1) 96 123 8888</p>
+                        <div class="footer__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Purchase</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Payemnt</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Shipping</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Return</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hatchback</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Sedan</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> SUV</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brand</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Abarth</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Acura</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Alfa Romeo</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> BMW</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Chevrolet</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Ferrari</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Honda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/jquery.nice-select.min.js'%}"></script>
+    <script src="{% static 'js/jquery-ui.min.js'%}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{% static 'js/mixitup.min.js'%}"></script>
+    <script src="{% static 'js/jquery.slicknav.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+</body>
+
+</html>

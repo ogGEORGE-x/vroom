@@ -66,4 +66,5 @@ urlpatterns = [
     path('contact/blogs/', include('xmotors.urls')),
     path('car/<int:car_id>/', include('xmotors.urls')),
     path('blog/<int:blog_id>/', include('xmotors.urls')),
+    path('checkout/', include('xmotors.urls')),
 ]
