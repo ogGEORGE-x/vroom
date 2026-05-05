@@ -67,3 +67,42 @@ class Seller(models.Model):
     class Meta:
         verbose_name = 'Seller'
         verbose_name_plural = 'Sellers'
+class MpesaTransaction(models.Model):
+    """
+    Stores all M-Pesa STK Push transactions for tracking and reconciliation.
+    """
+
+    class Status(models.TextChoices):
+        PENDING   = 'PENDING',   'Pending'
+        SUCCESS   = 'SUCCESS',   'Success'
+        FAILED    = 'FAILED',    'Failed'
+        CANCELLED = 'CANCELLED', 'Cancelled'
+
+    # --- Request Info ---
+    phone_number       = models.CharField(max_length=15)
+    amount             = models.DecimalField(max_digits=10, decimal_places=2)
+    account_reference  = models.CharField(max_length=100)
+    description        = models.CharField(max_length=150)
+
+    # --- Daraja Response Fields ---
+    merchant_request_id  = models.CharField(max_length=100, blank=True, null=True)
+    checkout_request_id  = models.CharField(max_length=100, blank=True, null=True, db_index=True)
+
+    # --- Callback / Confirmation Fields ---
+    mpesa_receipt_number = models.CharField(max_length=50, blank=True, null=True)
+    transaction_date     = models.CharField(max_length=30, blank=True, null=True)
+    result_code          = models.IntegerField(blank=True, null=True)
+    result_desc          = models.TextField(blank=True, null=True)
+
+    # --- Status ---
+    status     = models.CharField(max_length=20, choices=Status.choices, default=Status.PENDING)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = 'M-Pesa Transaction'
+        verbose_name_plural = 'M-Pesa Transactions'
+
+    def __str__(self):
+        return f"{self.phone_number} | KES {self.amount} | {self.status}"

@@ -4,6 +4,8 @@ from .models import Blog
 from .models import Contact
 from .models import About
 from .models import Seller
+from .models import MpesaTransaction
+
 
 # Register your models here.
 admin.site.register(Car)
