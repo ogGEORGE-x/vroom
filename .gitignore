@@ -1,0 +1,30 @@
+# Environment variables
+.env
+
+# Database
+db.sqlite3
+
+# Static files
+staticfiles/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+xenv/
+
+# Django
+*.log
+local_settings.py
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
